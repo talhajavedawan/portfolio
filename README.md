@@ -197,6 +197,6 @@ This portfolio documents a **custom commercial ERP**. The production implementat
 
 ## About me
 
-I am a London-based software engineer with 6+ years of experience in **C#, .NET, WPF, SQL Server, enterprise applications and production support**. I have completed an MSc in Software Engineering and am open to UK .NET and enterprise software roles.
+I am a London-based software engineer with 6+ years of experience in **C#, .NET, WPF, SQL Server, enterprise applications and production support**. I have completed an MSc in Software Engineering at The University of Bolton and am open to office-based or hybrid roles in London across .NET development, application support, IT systems, technical support and ERP.
 
 [LinkedIn](https://www.linkedin.com/in/talha-javed-013319173/) · [GitHub](https://github.com/talhajavedawan)
