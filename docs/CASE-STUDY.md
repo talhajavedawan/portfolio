@@ -1,10 +1,10 @@
-# SmartERP case study
+# ERP engineering case study
 
 ## Context
 
-The organisation needed one configurable platform for operational and financial processes across several companies. Off-the-shelf products did not closely match the approval routes, document flows, reporting expectations, and cross-company working practices.
+The companies I worked with needed one configurable platform for operational and financial processes across several companies. Off-the-shelf products did not closely match the approval routes, document flows, reporting expectations, and cross-company working practices.
 
-SmartERP grew into a broad desktop platform used by approximately 200–250 people. My role developed from software engineering into senior engineering and technical product responsibilities.
+The companies’ ERP grew into a broad desktop platform used by approximately 200–250 people. At MicroKosm, my role developed from software engineering into senior engineering and technical product responsibilities.
 
 ## My responsibilities
 
@@ -22,9 +22,9 @@ SmartERP grew into a broad desktop platform used by approximately 200–250 peop
 | Companies supported | 7–9 |
 | Desktop windows/views | 100+ |
 | Integrated email items handled | 5,000+ |
-| Commercial development period | 2019–2025, followed by portfolio modernisation work |
+| My commercial development period | 2019–2025 at MicroKosm |
 
-The value of this project is not a single algorithm. It is the accumulated engineering needed to keep a business-critical system reliable while requirements, users, companies, and integrations continued to grow.
+The value of this experience lies beyond a single algorithm. It is the accumulated engineering needed to keep a business-critical system reliable while requirements, users, companies, and integrations continued to grow.
 
 ## Selected outcomes
 
@@ -44,7 +44,7 @@ The value of this project is not a single algorithm. It is the accumulated engin
 
 ## What this case study demonstrates
 
-- Ownership of a mature enterprise product.
+- Hands-on development and support of a mature enterprise system.
 - Strong debugging and production-support skills.
 - Practical knowledge of desktop .NET, relational data systems, REST APIs, microservices, and complex financial operations.
 - Ability to balance legacy constraints with modern engineering direction.
