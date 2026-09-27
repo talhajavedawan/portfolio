@@ -1,12 +1,12 @@
 # Talha Javed Portfolio
 
-Software engineering, application support and project delivery work. SmartERP is the featured enterprise case study below.
+Software engineering, application support and project delivery work. The featured case study describes my contributions to an ERP developed under MicroKosm for the companies it served.
 
 [View the live portfolio](https://talhajavedawan.github.io/talhajaved-portfolio/)
 
 ## SmartERP — Enterprise ERP Engineering Case Study
 
-> 6+ years building and supporting a custom multi-company ERP used by **200–250 people across 7–9 businesses**.
+> My 2019–2025 work at MicroKosm included developing and supporting a custom multi-company ERP used by **200–250 people across 7–9 businesses**.
 
 [![C#](https://img.shields.io/badge/C%23-.NET-512BD4?logo=dotnet)](https://dotnet.microsoft.com/)
 [![WPF](https://img.shields.io/badge/UI-WPF-0C54C2)](https://learn.microsoft.com/dotnet/desktop/wpf/)
@@ -17,7 +17,7 @@ Software engineering, application support and project delivery work. SmartERP is
 
 ## Executive summary
 
-SmartERP connects finance, procurement, inventory, CRM and HR workflows in one business-critical platform. I worked across feature delivery, production support, stakeholder requirements and web modernisation.
+The companies’ ERP connects finance, procurement, inventory, CRM and HR workflows. At MicroKosm, I contributed to feature delivery, production support, stakeholder requirements and web modernisation.
 
 | Evidence | Scale |
 |---|---:|
@@ -55,9 +55,9 @@ SmartERP connects finance, procurement, inventory, CRM and HR workflows in one b
 
 ## Product walkthrough
 
-Selected screens show the product, workflows and engineering scope at a glance.
+Selected screens illustrate the workflows and engineering context of my work.
 
-> The production source code and confidential business data are not published. HR screens containing personal-data fields are intentionally omitted.
+> The companies’ production source code and confidential business data are not published. HR screens containing personal-data fields are intentionally omitted.
 
 ### Platform overview
 
@@ -164,7 +164,7 @@ Long-running ERP sessions exposed memory pressure in complex grids, document pre
 
 The application used role- and permission-based workflows across companies and departments. Modernisation plans introduced API authentication with JWT and a stronger separation between UI, application logic, and persistence.
 
-### Product and team ownership
+### Technical contribution and team coordination
 
 My contribution extended beyond coding: stakeholder discussions, prioritisation, production investigation, release support, technical planning, mentoring, and coordinating web-migration work.
 
@@ -195,7 +195,7 @@ The showcase targets .NET 8 and has no external infrastructure dependencies.
 
 ## Portfolio scope
 
-This portfolio documents a **custom commercial ERP**. The production implementation remains private, so credentials, customer information, databases, confidential business rules, and proprietary source code are not published. Metrics are approximate and presented only to communicate engineering scale.
+This portfolio documents **my work on a commercial ERP owned by the companies I worked with**. The production implementation remains private, so credentials, customer information, databases, confidential business rules, and proprietary source code are not published. Metrics are approximate and presented only to communicate engineering scale.
 
 ## About me
 
