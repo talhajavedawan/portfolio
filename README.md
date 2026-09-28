@@ -19,6 +19,8 @@ Software engineering, application support and project delivery work. The feature
 
 The companies’ ERP connects finance, procurement, inventory, CRM and HR workflows. At MicroKosm, I contributed to feature delivery, production support, stakeholder requirements and web modernisation.
 
+My separate MSc *SmartERP* research proposal explored how a modular ERP could address bookkeeping, procurement, inventory and expense workflows for accounting and finance SMEs. It describes proposed research and development, not additional deployed features of the companies’ ERP. [Read how the proposal relates to this commercial case study](docs/CASE-STUDY.md#relationship-to-my-msc-proposal).
+
 | Evidence | Scale |
 |---|---:|
 | Commercial engineering | 6+ years |
