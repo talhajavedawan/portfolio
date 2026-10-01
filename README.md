@@ -2,7 +2,7 @@
 
 Software engineering, application support and project delivery work. The featured case study describes my contributions to an ERP developed under MicroKosm for the companies it served.
 
-[View the live portfolio](https://talhajavedawan.github.io/talhajaved-portfolio/)
+[View the live portfolio](https://talhajavedawan.github.io/portfolio/)
 
 ## SmartERP — Enterprise ERP Engineering Case Study
 
@@ -13,7 +13,7 @@ Software engineering, application support and project delivery work. The feature
 [![Entity Framework](https://img.shields.io/badge/Data-Entity%20Framework-512BD4)](https://learn.microsoft.com/ef/)
 [![SQL Server](https://img.shields.io/badge/Database-SQL%20Server-CC2927?logo=microsoftsqlserver)](https://www.microsoft.com/sql-server)
 [![Portfolio](https://img.shields.io/badge/Status-Custom%20ERP%20Case%20Study-1F6FEB)](#portfolio-scope)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/talhajavedawan/talhajaved-portfolio?quickstart=1)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/talhajavedawan/portfolio?quickstart=1)
 
 ## Executive summary
 
