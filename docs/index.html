@@ -54,7 +54,7 @@ a:focus-visible,button:focus-visible {outline:2px solid var(--accent);outline-of
 
       <div class="nav-links">
         <a href="./" aria-current="page">Home</a>
-        <a href="./portfolio.html#work">Work</a>
+        <a href="./work.html">Work</a>
         <a href="./portfolio.html#smart-erp">SmartERP</a>
         <a href="./portfolio.html#experience">Experience</a>
         <a href="./portfolio.html#skills">Skills</a>
@@ -74,7 +74,7 @@ a:focus-visible,button:focus-visible {outline:2px solid var(--accent);outline-of
 <h1><span class="intro-name">Talha Javed</span><span>.NET Software Engineer</span></h1>
 <p class="hero-lead">Building and supporting business applications with C#, WPF and SQL Server.</p>
 <div class="hero-tags" aria-label="Core skills"><span>C# / .NET</span><span>WPF</span><span>SQL Server</span><span>Application Support</span></div>
-<div class="hero-actions"><a class="button button-primary" href="./portfolio.html#work">Explore my work</a><a class="button button-secondary" href="./cv/Talha_Javed_CV.pdf" target="_blank" rel="noopener noreferrer">View CV</a><a class="text-link" href="#contact">Get in touch</a></div>
+<div class="hero-actions"><a class="button button-primary" href="./work.html">Explore my work</a><a class="button button-secondary" href="./cv/Talha_Javed_CV.pdf" target="_blank" rel="noopener noreferrer">View CV</a><a class="text-link" href="#contact">Get in touch</a></div>
 </div>
 <div class="hero-visual"><div class="visual-card">
 <div class="visual-topbar"><span></span><span></span><span></span><small>Featured work · SmartERP</small></div>
@@ -107,7 +107,8 @@ a:focus-visible,button:focus-visible {outline:2px solid var(--accent);outline-of
 <footer class="site-footer shell"><div><strong>Talha Javed</strong><span>.NET Software Engineer · Application Support · London, UK</span></div><a href="./portfolio.html">Full portfolio</a></footer>
 <script>
 const legacySections = ['work','smart-erp','experience','skills'];
-if (legacySections.includes(location.hash.slice(1))) location.replace('./portfolio.html' + location.hash);
+if (location.hash === '#work') location.replace('./work.html');
+else if (legacySections.includes(location.hash.slice(1))) location.replace('./portfolio.html' + location.hash);
 </script>
 <script src="./script.js"></script>
 </body>
