@@ -20,14 +20,29 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="./styles.css" />
   <title>Talha Javed | .NET Software Engineer & Application Support | London</title>
+<style>
+.home-hero {padding-top:72px;padding-bottom:72px;min-height:auto}
+.home-hero h1 {font-size:clamp(48px,6vw,76px);line-height:1.08}
+.home-hero .intro-name {display:block;color:var(--text);background:none;font-size:18px;letter-spacing:0;margin-bottom:20px}
+.home-hero .visual-card {transform:none}
+.home-hero .visual-card img {min-height:0;aspect-ratio:16 / 10;object-fit:contain;background:var(--bg-soft)}
+.home-summary {padding-top:64px;padding-bottom:80px}
+.home-summary .project-grid {grid-template-columns:repeat(3,minmax(0,1fr))}
+.home-summary .project-card {min-height:300px;padding:26px}
+.home-summary .project-card h3 {font-size:28px;line-height:1.2;margin:28px 0 16px}
+.home-summary .project-links {margin-top:auto;padding-top:24px}
+.nav-links a[aria-current] {color:var(--accent);background:var(--panel)}
+a:focus-visible,button:focus-visible {outline:2px solid var(--accent);outline-offset:4px}
+.home-hero .eyebrow,.home-hero .hero-tags span,.home-summary .project-meta,.metrics span {font-size:14px}
+@media(max-width:1100px){.nav {gap:12px}.nav-links>a {padding-inline:8px}.brand {min-width:0}.brand-copy small {display:none}}
+@media(max-width:1000px){.home-summary .project-grid {grid-template-columns:1fr}.home-hero {padding-top:40px;gap:36px}}
+@media(max-width:620px){.home-hero h1 {font-size:clamp(42px,12vw,60px)}.home-summary {padding-top:56px}.home-hero .hero-actions .button {flex:1 1 140px}}
+</style>
 </head>
 <body>
-  <div class="page-glow page-glow-one" aria-hidden="true"></div>
-  <div class="page-glow page-glow-two" aria-hidden="true"></div>
-
   <header class="site-header">
     <nav class="nav shell" aria-label="Primary navigation">
-      <a class="brand" href="#top" aria-label="Talha Javed home">
+      <a class="brand" href="./" aria-label="Talha Javed home">
         <span class="brand-mark">TJ</span>
         <span class="brand-copy">Talha Javed<small>.NET · Application Support · Systems</small></span>
       </a>
@@ -37,10 +52,11 @@
       </button>
 
       <div class="nav-links">
-        <a href="#work">Work</a>
-        <a href="#smart-erp">SmartERP</a>
-        <a href="#experience">Experience</a>
-        <a href="#skills">Skills</a>
+        <a href="./" aria-current="page">Home</a>
+        <a href="./portfolio.html#work">Work</a>
+        <a href="./portfolio.html#smart-erp">SmartERP</a>
+        <a href="./portfolio.html#experience">Experience</a>
+        <a href="./portfolio.html#skills">Skills</a>
         <a href="#contact">Contact</a>
         <button class="theme-toggle" type="button" aria-label="Toggle colour theme" title="Toggle colour theme">
           <span class="theme-icon" aria-hidden="true">◐</span>
@@ -49,256 +65,46 @@
     </nav>
   </header>
 
-  <main id="top">
-    <section class="hero shell section">
-      <div class="hero-copy reveal">
-        <div class="eyebrow"><span class="status-dot"></span> London, UK · Open to opportunities</div>
-        <h1>I build, support and improve <span>business-critical systems.</span></h1>
-        <p class="hero-lead">6+ years across .NET engineering, application support, SQL Server troubleshooting and ERP systems used by 200–250 people across 7–9 businesses.</p>
-        <div class="hero-tags" aria-label="Core technologies">
-          <span>C# / .NET</span><span>Application Support</span><span>SQL Server</span><span>ASP.NET Core</span><span>ERP Systems</span>
-        </div>
-        <div class="hero-actions">
-          <a class="button button-primary" href="#smart-erp">Explore ERP case study <span>↘</span></a>
-          <a class="button button-secondary" href="./cv/Talha_Javed_CV.pdf" target="_blank" rel="noopener noreferrer">View CV</a>
-          <a class="button button-secondary" href="https://github.com/talhajavedawan" target="_blank" rel="noreferrer">GitHub <span>↗</span></a>
-          <a class="text-link" href="https://www.linkedin.com/in/talha-javed-013319173/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
-          <a class="text-link" href="mailto:talhajavedawan7@gmail.com">Email ↗</a>
-        </div>
-      </div>
 
-      <div class="hero-visual reveal" aria-label="ERP work case study preview">
-        <div class="visual-card">
-          <div class="visual-topbar">
-            <span></span><span></span><span></span>
-            <small>ERP work · MicroKosm</small>
-          </div>
-          <img src="./images/MainDashboard.PNG" alt="SmartERP desktop dashboard showing enterprise modules" />
-          <div class="visual-caption">
-            <div><strong>Professional case study</strong><span>Multi-company ERP platform</span></div>
-            <a href="https://github.com/talhajavedawan/portfolio" target="_blank" rel="noreferrer" aria-label="Open SmartERP case study on GitHub">↗</a>
-          </div>
-        </div>
-        <div class="floating-chip chip-one">200–250 users</div>
-        <div class="floating-chip chip-two">7–9 companies</div>
-      </div>
-    </section>
-
-    <section class="metrics shell reveal" aria-label="Engineering impact">
-      <article><strong>6+</strong><span>years commercial engineering</span></article>
-      <article><strong>200–250</strong><span>ERP users supported</span></article>
-      <article><strong>100+</strong><span>desktop views & workflows</span></article>
-      <article><strong>5,000+</strong><span>email items integrated</span></article>
-    </section>
-
-    <section id="work" class="section shell">
-      <div class="section-heading reveal">
-        <div><span class="kicker">Selected work</span><h2>Software built for real operations.</h2></div>
-        <p>Business rules, permissions, data integrity, production reliability and modernisation—proven in live systems.</p>
-      </div>
-
-      <div class="project-grid">
-        <article class="project-card project-featured reveal">
-          <div class="project-meta"><span>01 · Flagship</span><span>Enterprise software</span></div>
-          <h3><a class="project-card-link" href="#smart-erp">ERP engineering at MicroKosm</a></h3>
-          <p>At MicroKosm I developed and supported parts of a multi-company ERP used by approximately 200–250 people across 7–9 businesses.</p>
-          <div class="project-stack"><span>C#</span><span>.NET Framework</span><span>WPF</span><span>EF6</span><span>SQL Server</span><span>DevExpress</span></div>
-          <div class="project-links">
-            <a href="#smart-erp">View case study ↓</a>
-            <a href="https://github.com/talhajavedawan/portfolio" target="_blank" rel="noreferrer">Repository ↗</a>
-          </div>
-        </article>
-
-        <article class="project-card reveal">
-          <div class="project-meta"><span>02 · Academic</span><span>Design patterns</span></div>
-          <h3>Smart Home Energy Management</h3>
-          <p>Django application for homeowners, maintenance teams and administrators with energy analytics, scheduling, notifications and role-based workflows.</p>
-          <div class="project-stack"><span>Python</span><span>Django</span><span>Strategy</span><span>Factory</span><span>Observer</span></div>
-        </article>
-
-        <article class="project-card reveal">
-          <div class="project-meta"><span>03 · DevOps</span><span>Cloud delivery</span></div>
-          <h3>Task Management Platform</h3>
-          <p>Team-based microservice project with React and Django, containerised delivery, Jenkins CI/CD and deployment workflows using AWS ECR/EC2.</p>
-          <div class="project-stack"><span>React</span><span>Django</span><span>Docker</span><span>Jenkins</span><span>AWS</span></div>
-        </article>
-      </div>
-    </section>
-
-    <section id="smart-erp" class="section smart-section">
-      <div class="shell">
-        <div class="section-heading reveal">
-          <div><span class="kicker">Professional case study</span><h2>ERP engineering at business scale.</h2></div>
-          <p>A view of my engineering contributions, production support and the systems I worked with at MicroKosm.</p>
-        </div>
-
-        <div class="smart-layout">
-          <div class="smart-story reveal">
-            <div class="story-block">
-              <span class="story-number">01</span>
-              <div><h3>Built around real financial workflows</h3><p>Connected finance, procurement, inventory, CRM, HR and operational workflows in one platform.</p></div>
-            </div>
-            <div class="story-block">
-              <span class="story-number">02</span>
-              <div><h3>Stabilised mature .NET</h3><p>Production work included EF6 entity tracking, lazy loading, cross-context errors, memory pressure, DevExpress trees/grids and Outlook COM lifecycle issues.</p></div>
-            </div>
-            <div class="story-block">
-              <span class="story-number">03</span>
-              <div><h3>Designed practical modernisation</h3><p>The migration direction moves toward ASP.NET Core Web API, Angular, EF Core, JWT authentication, tenant-aware architecture and automated delivery while protecting operational continuity.</p></div>
-            </div>
-          </div>
-
-          <aside class="impact-card reveal">
-            <span class="kicker">Engineering highlights</span>
-            <ul>
-              <li><strong>15-minute idle logout</strong><span>Designed across 100+ desktop windows.</span></li>
-              <li><strong>Outlook integration</strong><span>Inbox, sent items, folders, HTML previews, attachments and unread state.</span></li>
-              <li><strong>Role-based access</strong><span>Users mapped to companies, departments, roles and hierarchical permissions.</span></li>
-              <li><strong>Technical leadership</strong><span>Mentoring, stakeholder translation and graduate-team coordination.</span></li>
-            </ul>
-            <a class="button button-secondary full" href="https://github.com/talhajavedawan/portfolio/blob/main/docs/CASE-STUDY.md" target="_blank" rel="noreferrer">Read detailed case study ↗</a>
-          </aside>
-        </div>
-
-        <div class="gallery-heading reveal">
-          <div><span class="kicker">Business capabilities</span><h3>One custom ERP across finance and operations.</h3></div>
-          <p>Connected modules share company, department, user, permission and transaction context.</p>
-        </div>
-
-        <div class="skills-grid">
-          <article class="skill-card reveal"><span>01</span><h3>Bookkeeping and ledger</h3><p>General ledger, chart of accounts, debit and credit postings, current accounts, VAT, trial balance, profit and loss.</p></article>
-          <article class="skill-card reveal"><span>02</span><h3>Treasury and reconciliation</h3><p>Account reconciliation, petty cash, multi-currency transactions, interbank and intercompany transfers.</p></article>
-          <article class="skill-card reveal"><span>03</span><h3>Loans and financial control</h3><p>Short-term, company and employee loans, advances, budgeting, cost accounting, cash flow and administrative expenses.</p></article>
-          <article class="skill-card reveal"><span>04</span><h3>Procurement and assets</h3><p>Procurement, contract workflows, vendor management, inventory, asset management and operational reporting.</p></article>
-          <article class="skill-card reveal"><span>05</span><h3>People and relationships</h3><p>HRM, CRM, employees, customers, vendors, companies, departments and organisational mapping.</p></article>
-          <article class="skill-card reveal"><span>06</span><h3>Collaboration and platform</h3><p>Internal order-based chat, notifications, RBAC, REST APIs and microservice-oriented modernisation.</p></article>
-        </div>
-
-        <div class="gallery-heading reveal">
-          <div><span class="kicker">Product walkthrough</span><h3>A working product, visually.</h3></div>
-          <p>Click any screen to inspect it.</p>
-        </div>
-
-        <div class="gallery reveal" aria-label="SmartERP screenshot gallery">
-          <button class="gallery-item gallery-wide" data-image="./images/OrdersTrackingOnEveryModule.PNG" data-title="End-to-end transaction tracking">
-            <img src="./images/OrdersTrackingOnEveryModule.PNG" alt="SmartERP hierarchical transaction tracking" loading="lazy" />
-            <span><strong>Transaction tracking</strong><small>Inquiry → order → invoice → receipt</small></span>
-          </button>
-          <button class="gallery-item" data-image="./images/Role%20and%20Access%20Based%20Control.PNG" data-title="Role-based access control">
-            <img src="./images/Role%20and%20Access%20Based%20Control.PNG" alt="SmartERP role and permission administration" loading="lazy" />
-            <span><strong>Access control</strong><small>Roles · companies · permissions</small></span>
-          </button>
-          <button class="gallery-item" data-image="./images/CurrentAccountingCostSheet.PNG" data-title="Accounting cost sheet">
-            <img src="./images/CurrentAccountingCostSheet.PNG" alt="SmartERP accounting cost sheet" loading="lazy" />
-            <span><strong>Cost analysis</strong><small>Budget · actual · margin</small></span>
-          </button>
-          <button class="gallery-item" data-image="./images/UserNotificationsOnTransactions.PNG" data-title="Workflow notifications">
-            <img src="./images/UserNotificationsOnTransactions.PNG" alt="SmartERP transaction notifications" loading="lazy" />
-            <span><strong>Notifications</strong><small>Comments · tags · status events</small></span>
-          </button>
-          <button class="gallery-item" data-image="./images/InventoryReports.PNG" data-title="Inventory valuation">
-            <img src="./images/InventoryReports.PNG" alt="SmartERP inventory valuation report" loading="lazy" />
-            <span><strong>Inventory reporting</strong><small>Quantity · cost · valuation</small></span>
-          </button>
-        </div>
-      </div>
-    </section>
-
-    <section id="experience" class="section shell">
-      <div class="section-heading reveal">
-        <div><span class="kicker">Experience</span><h2>Engineering and technical delivery.</h2></div>
-        <p>I am most useful where software engineering meets messy operational reality: changing requirements, live users, legacy constraints and business-critical data.</p>
-      </div>
-
-      <div class="timeline">
-        <article class="timeline-item reveal">
-          <div class="timeline-date">Sep 2019 — Jul 2021</div>
-          <div class="timeline-content">
-            <span class="role-tag">Software Engineer</span>
-            <h3>MicroKosm · Islamabad</h3>
-            <p>Developed ERP interfaces, business logic and database features across accounting, sales, purchasing and inventory. Investigated defects, corrected data issues and supported testing and deployment.</p>
-          </div>
-        </article>
-        <article class="timeline-item reveal">
-          <div class="timeline-date">Aug 2021 — Dec 2023</div>
-          <div class="timeline-content">
-            <span class="role-tag">Senior Software Engineer</span>
-            <h3>MicroKosm · Islamabad</h3>
-            <p>Built and supported the multi-company ERP across C#, WPF, Entity Framework and SQL Server. Delivered features and handled production debugging, data integrity, system stability, integrations, release support and junior mentoring.</p>
-          </div>
-        </article>
-        <article class="timeline-item reveal">
-          <div class="timeline-date">Jan 2024 — Jul 2025</div>
-          <div class="timeline-content">
-            <span class="role-tag">Technical Product Manager</span>
-            <h3>MicroKosm · Islamabad</h3>
-            <p>Translated stakeholder needs into product requirements, priorities and release plans. Coordinated developers, user feedback and delivery while supporting modernisation toward ASP.NET Core, Angular, REST APIs and microservices.</p>
-          </div>
-        </article>
-        <article class="timeline-item reveal">
-          <div class="timeline-date">2025 — 2026</div>
-          <div class="timeline-content">
-            <span class="role-tag">MSc Software Engineering</span>
-            <h3>University of Bolton</h3>
-            <p>Advanced software development, DevOps, information security, research methods and a SmartERP-focused dissertation combining engineering practice with structured evaluation.</p>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section id="skills" class="section skills-section">
-      <div class="shell">
-        <div class="section-heading reveal">
-          <div><span class="kicker">Capabilities</span><h2>.NET engineering with hands-on application support.</h2></div>
-          <p>I work comfortably from requirements and relational models through UI behaviour, production debugging, APIs, testing and deployment practices.</p>
-        </div>
-
-        <div class="skills-grid">
-          <article class="skill-card reveal"><span>01</span><h3>.NET engineering</h3><p>C#, .NET Framework, ASP.NET Core, Web API, EF6, EF Core, xUnit.</p></article>
-          <article class="skill-card reveal"><span>02</span><h3>Desktop systems</h3><p>WPF, XAML, DevExpress, MVVM patterns, long-running business applications.</p></article>
-          <article class="skill-card reveal"><span>03</span><h3>Data & architecture</h3><p>SQL Server, relational modelling, migrations, transaction workflows, tenant-aware design.</p></article>
-          <article class="skill-card reveal"><span>04</span><h3>Web & security</h3><p>Angular, TypeScript, REST APIs, microservices, JWT authentication, RBAC and permission models.</p></article>
-          <article class="skill-card reveal"><span>05</span><h3>Delivery & cloud</h3><p>Scrum, Trello, API testing, QA, Git source control, Docker, Jenkins and AWS ECR/EC2.</p></article>
-          <article class="skill-card reveal"><span>06</span><h3>Support & stakeholders</h3><p>Application troubleshooting, user support, requirements discovery, documentation, prioritisation, mentoring and technical coordination.</p></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section shell principles">
-      <div class="quote-card reveal">
-        <span class="kicker">How I work</span>
-        <blockquote>“Understand the business flow first. Trace the data. Make the smallest safe change. Test the failure paths. Then watch what happens in real use.”</blockquote>
-        <p>That approach has served me well in mature enterprise systems where reliability matters more than fashionable rewrites.</p>
-      </div>
-    </section>
-
-    <section id="contact" class="section shell contact-section">
-      <div class="contact-card reveal">
-        <div>
-          <span class="kicker">Let’s work together</span>
-          <h2>Looking for someone who can own the problem, not just the ticket?</h2>
-          <p>I’m open to UK opportunities in .NET development, application support, technical support and enterprise systems.</p>
-        </div>
-        <div class="contact-actions">
-          <a class="button button-secondary" href="./cv/Talha_Javed_CV.pdf" target="_blank" rel="noopener noreferrer">View CV</a>
-          <a class="button button-primary" href="mailto:talhajavedawan7@gmail.com">talhajavedawan7@gmail.com ↗</a>
-          <a class="button button-secondary" href="https://www.linkedin.com/in/talha-javed-013319173/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
-          <a class="text-link" href="https://github.com/talhajavedawan" target="_blank" rel="noreferrer">github.com/talhajavedawan ↗</a>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer shell">
-    <div><strong>Talha Javed</strong><span>.NET Software Engineer · Application Support · London, UK</span></div>
-  </footer>
-
-  <dialog class="lightbox" aria-label="Screenshot viewer">
-    <button class="lightbox-close" type="button" aria-label="Close screenshot">×</button>
-    <img src="" alt="" />
-    <p></p>
-  </dialog>
-
-  <script src="./script.js"></script>
+<main id="top">
+<section class="hero shell section home-hero">
+<div class="hero-copy">
+<div class="eyebrow">London, UK · Software engineering &amp; support</div>
+<h1><span class="intro-name">Hi, I’m Talha Javed.</span>I build software.<br><span>I keep it working.</span></h1>
+<p class="hero-lead">I’m a .NET software engineer with 6+ years of experience developing and supporting ERP systems. I work across C#, WPF and SQL Server, turning business needs into reliable software and solving problems for the people who use it.</p>
+<div class="hero-tags" aria-label="Core skills"><span>C# / .NET</span><span>WPF</span><span>SQL Server</span><span>Application Support</span></div>
+<div class="hero-actions"><a class="button button-primary" href="./portfolio.html#work">Explore my work</a><a class="button button-secondary" href="./cv/Talha_Javed_CV.pdf" target="_blank" rel="noopener noreferrer">View CV</a><a class="text-link" href="#contact">Get in touch</a></div>
+</div>
+<div class="hero-visual"><div class="visual-card">
+<div class="visual-topbar"><span></span><span></span><span></span><small>Featured work · SmartERP</small></div>
+<a href="./portfolio.html#smart-erp"><img src="./images/MainDashboard.PNG" alt="SmartERP desktop application dashboard" /></a>
+<div class="visual-caption"><div><strong>Software for everyday business operations</strong><span>Finance, procurement and inventory</span></div></div>
+</div></div>
+</section>
+<section class="metrics shell" aria-label="Professional experience">
+<article><strong>6+</strong><span>years of commercial experience</span></article>
+<article><strong>200–250</strong><span>ERP users supported</span></article>
+<article><strong>7–9</strong><span>businesses using the ERP</span></article>
+<article><strong>100+</strong><span>desktop views and workflows</span></article>
+</section>
+<section class="section shell home-summary">
+<div class="section-heading"><div><span class="kicker">What I bring</span><h2>Development, support and delivery.</h2></div><p>Hands-on experience with live business systems, from building features to investigating production issues and planning improvements.</p></div>
+<div class="project-grid">
+<article class="project-card"><div class="project-meta"><span>01 · Engineering</span></div><h3>Business software</h3><p>ERP workflows for accounting, sales, purchasing and inventory, built with C#, WPF, Entity Framework and SQL Server.</p><div class="project-links"><a href="./portfolio.html#smart-erp">Explore SmartERP</a></div></article>
+<article class="project-card"><div class="project-meta"><span>02 · Support</span></div><h3>Practical troubleshooting</h3><p>Production debugging, database issues, memory problems and integrations, with a focus on reliable operation and clear user support.</p><div class="project-links"><a href="./portfolio.html#skills">View my skills</a></div></article>
+<article class="project-card"><div class="project-meta"><span>03 · Delivery</span></div><h3>Technical coordination</h3><p>Experience translating requirements, prioritising work, mentoring developers and coordinating ERP modernisation.</p><div class="project-links"><a href="./portfolio.html#experience">View my experience</a></div></article>
+</div>
+</section>
+<section id="contact" class="section shell contact-section">
+<div class="contact-card"><div><span class="kicker">Contact</span><h2>Let’s talk about your team.</h2><p>I’m based in London and looking for office-based opportunities in .NET development, application support and ERP systems.</p></div>
+<div class="contact-actions"><a class="button button-primary" href="mailto:talhajavedawan7@gmail.com">Email me</a><a class="button button-secondary" href="./cv/Talha_Javed_CV.pdf" target="_blank" rel="noopener noreferrer">View CV</a><a class="button button-secondary" href="https://www.linkedin.com/in/talha-javed-013319173/" target="_blank" rel="noopener noreferrer">LinkedIn</a><a class="text-link" href="https://github.com/talhajavedawan" target="_blank" rel="noopener noreferrer">GitHub</a></div></div>
+</section>
+</main>
+<footer class="site-footer shell"><div><strong>Talha Javed</strong><span>.NET Software Engineer · Application Support · London, UK</span></div><a href="./portfolio.html">Full portfolio</a></footer>
+<script>
+const legacySections = ['work','smart-erp','experience','skills'];
+if (legacySections.includes(location.hash.slice(1))) location.replace('./portfolio.html' + location.hash);
+</script>
+<script src="./script.js"></script>
 </body>
 </html>
