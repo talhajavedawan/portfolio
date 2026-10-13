@@ -1,14 +1,14 @@
 (() => {
   const root = document.documentElement;
-  const savedTheme = localStorage.getItem('tj-theme');
-  const prefersLight = window.matchMedia('(prefers-color-scheme: light)').matches;
+  const savedTheme = localStorage.getItem('tj-reference-theme');
+  const prefersLight = true;
   root.dataset.theme = savedTheme || (prefersLight ? 'light' : 'dark');
 
   const themeToggle = document.querySelector('.theme-toggle');
   themeToggle?.addEventListener('click', () => {
     const next = root.dataset.theme === 'light' ? 'dark' : 'light';
     root.dataset.theme = next;
-    localStorage.setItem('tj-theme', next);
+    localStorage.setItem('tj-reference-theme', next);
   });
 
   const menuToggle = document.querySelector('.menu-toggle');
