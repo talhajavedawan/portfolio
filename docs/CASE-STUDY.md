@@ -8,7 +8,7 @@ The companies’ ERP grew into a broad desktop platform used by approximately 20
 
 ## Relationship to my MSc proposal
 
-For my COM7302 Research Methods module, I wrote a separate proposal titled *SmartERP: A customised ERP for accounting and finance SMEs*. Drawing on the operational problems I had seen in ERP work, it proposed a more accessible, modular approach to bookkeeping, procurement, inventory and administrative expenses, with role-based access and approval workflows.
+For my COM7302 Research Methods module, I wrote a separate proposal titled *Customised ERP: A customised ERP for accounting and finance SMEs*. Drawing on the operational problems I had seen in ERP work, it proposed a more accessible, modular approach to bookkeeping, procurement, inventory and administrative expenses, with role-based access and approval workflows.
 
 The proposal set out **intended** requirements gathering through interviews and surveys, iterative development, a web API, and usability and performance evaluation. Those aims are research and design plans; they are not claims that interviews, a new product launch or every proposed module was completed. This case study's commercial scale and engineering examples refer to my work at MicroKosm on the companies’ ERP. The proposal and the companies’ production system are separate pieces of work.
 
