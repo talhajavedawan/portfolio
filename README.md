@@ -6,7 +6,7 @@
 
 ## SmartERP
 
-At MicroKosm (2019–2025), I developed and supported a multi-company finance and operations ERP used by approximately 200–250 people across nine businesses. I progressed from Software Engineer to Senior Software Engineer and Technical Product Manager.
+From 2019 to 2025, I developed and supported a multi-company finance and operations ERP used by approximately 200–250 people across nine businesses. I progressed from Software Engineer to Senior Software Engineer and Technical Product Manager.
 
 - Delivered finance, procurement and inventory features using C#, .NET Framework 4.6/4.8, WPF/XAML, Entity Framework 6 and SQL Server.
 - Diagnosed production defects across application logic, Entity Framework and SQL Server, resolving data-integrity, performance, memory and integration issues and verifying fixes against affected workflows.
