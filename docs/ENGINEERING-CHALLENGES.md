@@ -66,17 +66,3 @@ Permission data used parent/child relationships and was displayed in hierarchica
 ### Lesson
 
 Hierarchical configuration is still domain data. It benefits from invariants, validation, and migration tests.
-
-## Outlook integration at operational scale
-
-### Situation
-
-The desktop client surfaced inboxes, sent mail, public folders, HTML previews, attachments, subfolders, and unread state across thousands of items.
-
-### Approach
-
-Constrain loading, avoid retaining COM-backed objects beyond the immediate operation, copy required values into managed models, and isolate integration failures from the rest of the ERP session.
-
-### Lesson
-
-External integrations should be treated as unreliable boundaries, with narrow adapters and deliberate cleanup.
