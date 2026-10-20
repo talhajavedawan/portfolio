@@ -13,7 +13,7 @@
   --radius-xl: 30px;
   --radius-lg: 22px;
   --radius-md: 16px;
-  --shell: 1180px;
+  --shell: 1600px;
 }
 
 html[data-theme="light"] {
@@ -50,7 +50,7 @@ button, input, textarea { font: inherit; }
 img { max-width: 100%; display: block; }
 button { color: inherit; }
 
-.shell { width: min(calc(100% - 40px), var(--shell)); margin-inline: auto; }
+.shell { width: min(calc(100% - clamp(40px, 6vw, 96px)), var(--shell)); margin-inline: auto; }
 .section { padding: 112px 0; }
 
 .page-glow {
