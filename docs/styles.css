@@ -466,3 +466,6 @@ html[data-theme="dark"]{--accent:#b89bff;--accent-2:#9474eb;--accent-3:#d7c8ff;-
 .module-card p{margin:0;color:var(--muted);font-size:13px;line-height:1.6}
 @media(max-width:900px){.module-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:580px){.module-grid{grid-template-columns:1fr}.module-card{min-height:125px}}
+
+
+.metrics-heading{font-family:Inter,system-ui,sans-serif;font-size:clamp(26px,3vw,36px);line-height:1.15;letter-spacing:-.035em;margin:0 auto 22px;color:var(--text)}
