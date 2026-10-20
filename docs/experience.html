@@ -23,6 +23,22 @@
 .experience-page .timeline-item {padding-bottom:34px}
 .nav-links a[aria-current] {color:var(--accent);background:var(--panel)}
 @media(max-width:820px){.experience-page{padding-top:40px}}
+
+.client-experience {margin-top:72px}
+.client-heading {margin-bottom:22px}
+.client-heading h2 {font-family:"Space Grotesk",Inter,sans-serif;font-size:clamp(26px,3.4vw,38px);line-height:1.12;letter-spacing:-.035em;margin:8px 0 10px}
+.client-heading p {color:var(--muted);max-width:690px;margin:0}
+.client-grid {display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px}
+.client-card {display:flex;align-items:center;gap:12px;min-height:96px;padding:14px;border:1px solid var(--line);border-radius:16px;background:var(--panel);transition:transform .2s ease,border-color .2s ease}
+.client-card:hover {transform:translateY(-3px);border-color:color-mix(in srgb,var(--accent) 45%,var(--line))}
+.client-mark {flex:0 0 42px;width:42px;height:42px;display:grid;place-items:center;border:1px solid var(--line);border-radius:12px;background:var(--panel-solid);overflow:hidden}
+.client-mark img {width:28px;height:28px;object-fit:contain}
+.client-copy {min-width:0}
+.client-copy strong {display:block;font-size:12px;line-height:1.35}
+.client-copy small {display:block;margin-top:5px;color:var(--muted);font-size:10px;line-height:1.35}
+@media(max-width:900px){.client-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:620px){.client-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.client-experience{margin-top:52px}}
+@media(max-width:420px){.client-grid{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -74,6 +90,35 @@
             <p>Developed C#/.NET features for sales, purchasing and inventory workflows, working across WPF screens, application logic and SQL Server. Reproduced defects, corrected data issues and tested fixes before release.</p>
           </div>
         </article>
+      </div>
+      <div class="client-experience" aria-labelledby="client-heading">
+        <div class="client-heading">
+          <span class="kicker">ERP client companies</span>
+          <h2 id="client-heading">Companies I supported</h2>
+          <p>Supported finance and operations workflows for these organisations through MicroKosm’s multi-company ERP.</p>
+        </div>
+        <div class="client-grid">
+        <a class="client-card" href="https://abteurope.uk/" target="_blank" rel="noopener noreferrer" aria-label="ABT Europe Limited, supported through MicroKosm">
+          <span class="client-mark"><img src="https://www.google.com/s2/favicons?domain=abteurope.uk&amp;sz=128" alt="" loading="lazy" /></span>
+          <span class="client-copy"><strong>ABT Europe Limited</strong><small>Supported through MicroKosm ↗</small></span>
+        </a>
+        <a class="client-card" href="https://albijjar.ae/" target="_blank" rel="noopener noreferrer" aria-label="Al Bijjar Trading (FZC), supported through MicroKosm">
+          <span class="client-mark"><img src="https://www.google.com/s2/favicons?domain=albijjar.ae&amp;sz=128" alt="" loading="lazy" /></span>
+          <span class="client-copy"><strong>Al Bijjar Trading (FZC)</strong><small>Supported through MicroKosm ↗</small></span>
+        </a>
+        <a class="client-card" href="https://jaztrade.ae/" target="_blank" rel="noopener noreferrer" aria-label="JAZ Trade International FZCO, supported through MicroKosm">
+          <span class="client-mark"><img src="https://www.google.com/s2/favicons?domain=jaztrade.ae&amp;sz=128" alt="" loading="lazy" /></span>
+          <span class="client-copy"><strong>JAZ Trade International FZCO</strong><small>Supported through MicroKosm ↗</small></span>
+        </a>
+        <a class="client-card" href="https://abtlogistics.co/" target="_blank" rel="noopener noreferrer" aria-label="ABT Logistics, supported through MicroKosm">
+          <span class="client-mark"><img src="https://www.google.com/s2/favicons?domain=abtlogistics.co&amp;sz=128" alt="" loading="lazy" /></span>
+          <span class="client-copy"><strong>ABT Logistics</strong><small>Supported through MicroKosm ↗</small></span>
+        </a>
+        <a class="client-card" href="https://zasagencies.com/" target="_blank" rel="noopener noreferrer" aria-label="ZAS Agencies, supported through MicroKosm">
+          <span class="client-mark"><img src="https://www.google.com/s2/favicons?domain=zasagencies.com&amp;sz=128" alt="" loading="lazy" /></span>
+          <span class="client-copy"><strong>ZAS Agencies</strong><small>Supported through MicroKosm ↗</small></span>
+        </a>
+        </div>
       </div>
     </section>
   </main>
