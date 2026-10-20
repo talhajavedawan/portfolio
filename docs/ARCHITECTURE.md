@@ -21,7 +21,7 @@ C# domain entities, workflow services, repositories, and EF6 provide the core be
 
 ### Integrations
 
-The system integrates with Microsoft Office/Outlook, document storage, notification services, and external communication features. These boundaries require careful resource cleanup and failure handling.
+The system connects to document storage, notification services and external communication features. These boundaries require careful resource cleanup and failure handling.
 
 ## Key architectural concerns
 
@@ -30,7 +30,7 @@ The system integrates with Microsoft Office/Outlook, document storage, notificat
 - Large data sets rendered through feature-rich desktop controls.
 - Backward compatibility during frequent operational change.
 - Isolation of configuration and credentials from source control.
-- Reliable interop with external desktop applications.
+- Failure handling at external system boundaries.
 
 ## Target web architecture
 
