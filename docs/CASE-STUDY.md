@@ -4,13 +4,13 @@
 
 The companies I worked with needed one configurable platform for operational and financial processes across several companies. Off-the-shelf products did not closely match the approval routes, document flows, reporting expectations, and cross-company working practices.
 
-The companies’ ERP grew into a broad desktop platform used by approximately 200–250 people. At MicroKosm, my role developed from software engineering into senior engineering and technical product responsibilities.
+The companies’ ERP grew into a broad desktop platform used by approximately 200–250 people. My role developed from software engineering into senior engineering and technical product responsibilities.
 
 ## Relationship to my MSc proposal
 
 For my COM7302 Research Methods module, I wrote a separate proposal titled *Customised ERP Solution: A customised ERP solution for accounting and finance SMEs*. Drawing on the operational problems I had seen in ERP work, it proposed a more accessible, modular approach to bookkeeping, procurement, inventory and administrative expenses, with role-based access and approval workflows.
 
-The proposal set out **intended** requirements gathering through interviews and surveys, iterative development, a web API, and usability and performance evaluation. Those aims are research and design plans; they are not claims that interviews, a new product launch or every proposed module was completed. This case study's commercial scale and engineering examples refer to my work at MicroKosm on the companies’ ERP. The proposal and the companies’ production system are separate pieces of work.
+The proposal set out **intended** requirements gathering through interviews and surveys, iterative development, a web API, and usability and performance evaluation. Those aims are research and design plans; they are not claims that interviews, a new product launch or every proposed module was completed. This case study's commercial scale and engineering examples refer to my commercial work on the companies’ ERP. The proposal and the companies’ production system are separate pieces of work.
 
 ## My responsibilities
 
@@ -28,7 +28,7 @@ The proposal set out **intended** requirements gathering through interviews and 
 | Companies supported | 7–9 |
 | Desktop windows/views | 100+ |
 | Integrated email items handled | 5,000+ |
-| My commercial development period | 2019–2025 at MicroKosm |
+| My commercial development period | 2019–2025 |
 
 The value of this experience lies beyond a single algorithm. It is the accumulated engineering needed to keep a business-critical system reliable while requirements, users, companies, and integrations continued to grow.
 
