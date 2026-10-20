@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#fffcfa" />
-  <meta name="description" content="Explore Talha Javed’s SmartERP engineering work, Django energy management project and team DevOps platform." />
+  <meta name="description" content="Explore Talha Javed’s software engineering work, including ERP, energy management and DevOps projects." />
   <meta name="author" content="Talha Javed" />
   <meta property="og:title" content="Work | Talha Javed — Software Engineering Projects" />
   <meta property="og:description" content="C#, .NET, SQL Server, ERP engineering and application support. Explore Talha Javed’s portfolio and SmartERP case study." />
@@ -60,7 +60,6 @@ a:focus-visible,button:focus-visible {outline:2px solid var(--accent);outline-of
       <div class="nav-links">
         <a href="./">Home</a>
         <a href="./work.html" aria-current="page">Work</a>
-        <a href="./portfolio.html#smart-erp">SmartERP</a>
         <a href="./portfolio.html#experience">Experience</a>
         <a href="./portfolio.html#skills">Skills</a>
         <a href="./#contact">Contact</a>
@@ -79,7 +78,28 @@ a:focus-visible,button:focus-visible {outline:2px solid var(--accent);outline-of
 <div class="work-overview"><div><h2>SmartERP</h2><p>A multi-company ERP connecting finance, procurement, inventory and operational workflows, used by approximately 200–250 people across nine businesses.</p><div class="project-stack"><span>C#</span><span>.NET Framework</span><span>WPF / XAML</span><span>DevExpress</span><span>EF6</span><span>SQL Server</span></div></div>
 <figure class="work-image"><img src="./images/MainDashboard.PNG" alt="SmartERP desktop dashboard displaying business modules" /><figcaption>SmartERP desktop dashboard</figcaption></figure></div>
 <div class="work-details"><div><h3>My role</h3><p>Progressed from Software Engineer to Senior Software Engineer and Technical Product Manager at MicroKosm, contributing to development, production support and delivery planning.</p></div><div><h3>What I delivered</h3><ul><li>Features across accounting, sales, procurement and inventory workflows.</li><li>Role-based permissions, transaction notifications and email integration.</li><li>Fixes for Entity Framework tracking issues, memory problems and desktop UI defects.</li><li>Requirements planning, developer mentoring and coordination of ERP modernisation.</li></ul></div></div>
-<div class="hero-actions"><a class="button button-primary" href="./portfolio.html#smart-erp">View case study &amp; gallery</a><a class="button button-secondary" href="https://github.com/talhajavedawan/portfolio/blob/main/docs/CASE-STUDY.md" target="_blank" rel="noopener noreferrer">Read engineering case study</a></div>
+<div class="smart-layout">
+<div class="smart-story">
+<div class="story-block"><span class="story-number">01</span><div><h3>Built around real financial workflows</h3><p>Connected finance, procurement, inventory, CRM, HR and operational workflows in one platform.</p></div></div>
+<div class="story-block"><span class="story-number">02</span><div><h3>Stabilised a mature .NET system</h3><p>Resolved application, database, memory and integration issues in a live production environment.</p></div></div>
+<div class="story-block"><span class="story-number">03</span><div><h3>Supported practical modernisation</h3><p>Contributed to planning a web migration using ASP.NET Core, Angular, REST APIs and EF Core.</p></div></div>
+</div>
+<aside class="impact-card"><span class="kicker">Engineering highlights</span><ul>
+<li><strong>15-minute idle logout</strong><span>Implemented across more than 100 desktop windows.</span></li>
+<li><strong>Outlook integration</strong><span>Inbox, sent items, folders, HTML previews, attachments and unread state.</span></li>
+<li><strong>Role-based access</strong><span>Users mapped to companies, departments, roles and hierarchical permissions.</span></li>
+<li><strong>Technical leadership</strong><span>Requirements planning, developer mentoring and graduate-team coordination.</span></li>
+</ul></aside>
+</div>
+<div class="gallery-heading" id="smarterp-gallery"><div><span class="kicker">SmartERP gallery</span><h3>Product screens.</h3></div><p>Select a screen to view it larger.</p></div>
+<div class="gallery reveal" aria-label="SmartERP screenshot gallery">
+<button class="gallery-item gallery-wide" data-image="./images/OrdersTrackingOnEveryModule.PNG" data-title="End-to-end transaction tracking"><img src="./images/OrdersTrackingOnEveryModule.PNG" alt="SmartERP hierarchical transaction tracking" loading="lazy"><span><strong>Transaction tracking</strong><small>Inquiry → order → invoice → receipt</small></span></button>
+<button class="gallery-item" data-image="./images/Role%20and%20Access%20Based%20Control.PNG" data-title="Role-based access control"><img src="./images/Role%20and%20Access%20Based%20Control.PNG" alt="SmartERP role and permission administration" loading="lazy"><span><strong>Access control</strong><small>Roles · companies · permissions</small></span></button>
+<button class="gallery-item" data-image="./images/CurrentAccountingCostSheet.PNG" data-title="Accounting cost sheet"><img src="./images/CurrentAccountingCostSheet.PNG" alt="SmartERP accounting cost sheet" loading="lazy"><span><strong>Cost analysis</strong><small>Budget · actual · margin</small></span></button>
+<button class="gallery-item" data-image="./images/UserNotificationsOnTransactions.PNG" data-title="Workflow notifications"><img src="./images/UserNotificationsOnTransactions.PNG" alt="SmartERP transaction notifications" loading="lazy"><span><strong>Notifications</strong><small>Comments · tags · status events</small></span></button>
+<button class="gallery-item" data-image="./images/InventoryReports.PNG" data-title="Inventory valuation"><img src="./images/InventoryReports.PNG" alt="SmartERP inventory valuation report" loading="lazy"><span><strong>Inventory reporting</strong><small>Quantity · cost · valuation</small></span></button>
+</div>
+<div class="hero-actions"><a class="button button-primary" href="#smarterp-gallery">View screenshots &amp; case study</a><a class="button button-secondary" href="https://github.com/talhajavedawan/portfolio/blob/main/docs/CASE-STUDY.md" target="_blank" rel="noopener noreferrer">Read engineering case study</a></div>
 </article>
 <article id="shems" class="work-project">
 <div class="work-meta"><span>02 · Individual academic project</span><span>Application development</span></div>
@@ -94,6 +114,7 @@ a:focus-visible,button:focus-visible {outline:2px solid var(--accent);outline-of
 <div class="work-details"><div><h3>My role</h3><p>Served as Project Manager, coordinating team delivery and contributing to pipeline configuration, deployment workflows and verification.</p></div><div><h3>What we delivered</h3><ul><li>Separate user and task services with a React frontend.</li><li>Docker containers and Compose configuration for deployment.</li><li>Jenkins CI/CD with container images stored in AWS ECR and deployment to EC2.</li><li>Webhook checks and API verification using Postman.</li></ul></div></div>
 </article>
 </div></main>
+<dialog class="lightbox" aria-label="Screenshot viewer"><button class="lightbox-close" type="button" aria-label="Close screenshot">×</button><img src="" alt=""><p></p></dialog>
 <footer class="site-footer shell"><div><strong>Talha Javed</strong><span>.NET Software Engineer · Application Support · London, UK</span></div><a class="button button-secondary" href="./#contact">Get in touch</a></footer>
 <script src="./script.js"></script>
 </body></html>
