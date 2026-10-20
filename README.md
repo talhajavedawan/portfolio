@@ -1,17 +1,19 @@
 # Talha Javed Portfolio
 
-**C# · .NET · WPF · SQL Server · ERP · Application Support**
+**Senior .NET Software Engineer · C# · WPF · SQL Server · ERP · Application Support**
 
 [Live portfolio](https://talhajavedawan.github.io/portfolio/) · [CV](https://talhajavedawan.github.io/portfolio/cv/Talha_Javed_CV.pdf) · [LinkedIn](https://www.linkedin.com/in/talha-javed-013319173/)
 
 ## SmartERP
 
-At MicroKosm (2019–2025), I developed and supported a multi-company ERP used by approximately 200–250 people across nine businesses.
+At MicroKosm (2019–2025), I developed and supported a multi-company finance and operations ERP used by approximately 200–250 people across nine businesses. I progressed from Software Engineer to Senior Software Engineer and Technical Product Manager.
 
-- Built finance, procurement and inventory features using C#, .NET Framework, WPF, EF6 and SQL Server.
-- Resolved production, performance, data-integrity and integration issues.
-- Implemented session security across 100+ windows and Outlook integration supporting 5,000+ items.
-- Mentored developers and supported modernisation toward ASP.NET Core, Angular and REST APIs.
+- Delivered finance, procurement and inventory features using C#, .NET Framework 4.6/4.8, WPF/XAML, Entity Framework 6 and SQL Server.
+- Diagnosed production defects across application logic, Entity Framework and SQL Server, resolving data-integrity, performance, memory and integration issues and verifying fixes against affected workflows.
+- Integrated Outlook with the ERP to handle 5,000+ email items and implemented 15-minute idle sign-out across more than 100 application windows.
+- Reviewed code and mentored developers; coordinated five graduates delivering ASP.NET Core Web API and Angular features for ERP modernisation.
+
+**Core skills:** C# · .NET · ASP.NET Core Web API · REST APIs · WPF · XAML · EF6 · EF Core · SQL Server · LINQ · Production support · Troubleshooting · API and functional testing · Agile/Scrum · Requirements gathering · Stakeholder communication · Code review · Technical leadership · Release coordination
 
 ## Explore the engineering work
 
