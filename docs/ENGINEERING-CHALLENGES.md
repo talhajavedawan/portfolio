@@ -22,7 +22,7 @@ Desktop applications can accidentally make a data context behave like global sta
 
 ### Situation
 
-Large grids, previews, event handlers, cached objects, and Office COM objects accumulated during long user sessions.
+Large grids, previews, event handlers and cached objects accumulated during long user sessions.
 
 ### Approach
 
