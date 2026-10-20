@@ -36,7 +36,7 @@ The value of this experience lies beyond a single algorithm. It is the accumulat
 
 - Unified finance, procurement, inventory, lending, CRM and HR workflows in one permission-controlled platform.
 - Reduced duplicate work by connecting transactions across companies and departments.
-- Improved reliability through better EF state handling, query design, memory management and Outlook interop cleanup.
+- Improved reliability by addressing EF state handling, query design and memory management.
 - Defined a staged move toward ASP.NET Core REST APIs, Angular, EF Core, JWT and microservice-oriented boundaries without disrupting live operations.
 
 ## How I work
