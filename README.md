@@ -29,7 +29,7 @@ This repository contains the portfolio website, a documented commercial ERP case
 Based on the private SmartERP source repository, the desktop solution separates the WPF client (`ZAS_ERP`) from the business/data project (`ERP_BL`). The code includes domain repositories, an Entity Framework 6 `DBContextERP`, SQL Server persistence, and DevExpress UI/reporting components.
 
 ```mermaid
-flowchart TD
+flowchart LR
     UI["ZAS_ERP — WPF / XAML desktop client"] --> Screens["DevExpress controls, screens and reports"]
     UI --> BL["ERP_BL — business logic and domain modules"]
     Screens --> BL
