@@ -74,10 +74,6 @@ button { color: inherit; }
   background: linear-gradient(to bottom, rgba(7, 17, 31, .88), rgba(7, 17, 31, .52), transparent);
   backdrop-filter: blur(14px);
 }
-html[data-theme="light"] .site-header {
-  background: linear-gradient(to bottom, rgba(244, 247, 251, .9), rgba(244, 247, 251, .62), transparent);
-}
-
 .nav {
   min-height: 64px;
   display: flex;
@@ -115,12 +111,11 @@ html[data-theme="light"] .site-header {
   transition: .2s ease;
 }
 .nav-links > a:hover { color: var(--text); background: var(--panel); }
-.theme-toggle, .menu-toggle {
+.menu-toggle {
   border: 1px solid var(--line);
   background: var(--panel);
   cursor: pointer;
 }
-.theme-toggle { width: 40px; height: 40px; border-radius: 12px; }
 .menu-toggle { display: none; width: 42px; height: 42px; border-radius: 12px; padding: 11px; }
 .menu-toggle span { display: block; height: 2px; background: currentColor; margin: 4px 0; border-radius: 2px; }
 
@@ -374,7 +369,6 @@ html[data-theme="light"] .site-header {
   }
   .nav-links.is-open { display: flex; }
   .nav-links > a { padding: 12px 14px; }
-  .theme-toggle { width: 100%; }
   .metrics { grid-template-columns: repeat(2, 1fr); }
   .metrics article:nth-child(2) { border-right: 0; }
   .metrics article:nth-child(-n+2) { border-bottom: 1px solid var(--line); }
@@ -418,10 +412,9 @@ html[data-theme="light"] .site-header {
 }
 
 /* Reference-inspired portfolio: warm white, navy and orange. */
-:root,html[data-theme="light"]{--bg:#fffcfa;--bg-soft:#fff3e9;--panel:#fff;--panel-solid:#fff;--text:#263f6a;--muted:#646977;--line:#e9e3dd;--accent:#e86a16;--accent-2:#ff9600;--accent-3:#e86a16;--shadow:0 20px 55px rgba(66,46,29,.12);--radius-xl:20px;--radius-lg:14px}
-html[data-theme="dark"]{--bg:#151c29;--bg-soft:#1c2637;--panel:#202c3f;--panel-solid:#202c3f;--text:#f3f5f8;--muted:#b7c0ce;--line:#354155;--accent:#ff9b4a;--accent-2:#ff9b4a;--accent-3:#ff9b4a;--shadow:0 20px 55px #0004}
+:root{--bg:#fffcfa;--bg-soft:#fff3e9;--panel:#fff;--panel-solid:#fff;--text:#263f6a;--muted:#646977;--line:#e9e3dd;--accent:#e86a16;--accent-2:#ff9600;--accent-3:#e86a16;--shadow:0 20px 55px rgba(66,46,29,.12);--radius-xl:20px;--radius-lg:14px}
 body{background:var(--bg)}.page-glow{display:none}
-.site-header,html[data-theme="light"] .site-header{background:var(--bg);border-bottom:1px solid var(--line);padding:10px 0}
+.site-header{background:var(--bg);border-bottom:1px solid var(--line);padding:10px 0}
 .nav{border:0;border-radius:0;box-shadow:none;background:none;padding-inline:0}
 .brand-mark{background:#f47722;color:#fff;border-radius:7px}.brand-copy{font-size:18px}.brand-copy small{font-size:10px}
 .nav-links>a{font-weight:500}.nav-links>.nav-cv{background:#f78b08;color:#fff;padding:10px 18px;border-radius:6px}
@@ -448,9 +441,8 @@ body{background:var(--bg)}.page-glow{display:none}
 .reveal{opacity:1;transform:none}
 
 
-/* SmartERP module launcher and coordinated visual theme. */
-:root,html[data-theme="light"]{--accent:#714bdb;--accent-2:#9a70f5;--accent-3:#c9a8ff;--bg:#fff;--bg-soft:#f7f5fb;--panel:#fff;--panel-solid:#fff;--text:#27233a;--muted:#6c687a;--line:#e8e4ef;--shadow:0 18px 50px rgba(62,44,103,.10)}
-html[data-theme="dark"]{--accent:#b89bff;--accent-2:#9474eb;--accent-3:#d7c8ff;--bg:#171521;--bg-soft:#211e2d;--panel:#252232;--panel-solid:#252232;--text:#f4f0ff;--muted:#bbb5c9;--line:#393446;--shadow:0 18px 50px #0005}
+/* SmartERP module launcher and colour palette. */
+:root{--accent:#714bdb;--accent-2:#9a70f5;--accent-3:#c9a8ff;--bg:#fff;--bg-soft:#f7f5fb;--panel:#fff;--panel-solid:#fff;--text:#27233a;--muted:#6c687a;--line:#e8e4ef;--shadow:0 18px 50px rgba(62,44,103,.10)}
 .brand-mark{background:linear-gradient(135deg,#714bdb,#a66be8);border-radius:10px}
 .nav-links>.nav-cv{background:#714bdb}
 .button-primary,.contact-card .button-primary{background:#714bdb;color:#fff}
