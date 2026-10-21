@@ -24,17 +24,23 @@ This repository contains the portfolio website, a documented commercial ERP case
 
 [Read the full case study](docs/CASE-STUDY.md) · [Architecture and migration approach](docs/ARCHITECTURE.md) · [Engineering challenges](docs/ENGINEERING-CHALLENGES.md)
 
-### Architecture at a glance
+### Customised ERP — architecture at a glance
+
+Based on the private SmartERP source repository, the desktop solution separates the WPF client (`ZAS_ERP`) from the business/data project (`ERP_BL`). The code includes domain repositories, an Entity Framework 6 `DBContextERP`, SQL Server persistence, and DevExpress UI/reporting components.
 
 ```mermaid
-flowchart LR
-    UI["WPF / DevExpress UI"] --> Logic["C# business workflows"]
-    Logic --> Data["EF6 / repositories"]
-    Data --> DB[("SQL Server")]
-    Logic --> Integrations["Email and notifications"]
+flowchart TD
+    UI["ZAS_ERP — WPF / XAML desktop client"] --> Screens["DevExpress controls, screens and reports"]
+    UI --> BL["ERP_BL — business logic and domain modules"]
+    Screens --> BL
+    BL --> Repos["Module repositories — finance, procurement, inventory, administration"]
+    Repos --> EF["Entity Framework 6 — DBContextERP"]
+    EF --> SQL[("SQL Server")]
 ```
 
-The [architecture document](docs/ARCHITECTURE.md) also describes the planned incremental migration toward ASP.NET Core APIs, Angular and EF Core. The target design is not presented as a fully deployed replacement.
+**Source structure reviewed:** `ZAS_ERP/` (desktop client), `ERP_BL/` (business logic and repositories), `ERP_BL/DBContext/DBContextERP.cs` (EF6 context), and module repositories including procurement and company administration. This is a high-level conceptual view of the existing implementation, not a claim of strict Clean Architecture or full MVVM throughout the legacy application.
+
+The [architecture document](docs/ARCHITECTURE.md) separately describes the proposed migration toward ASP.NET Core APIs, Angular and EF Core; that target design is not presented as fully deployed.
 
 ## Review actual code and tests
 
