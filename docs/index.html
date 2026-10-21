@@ -70,6 +70,24 @@
     .proposal-note { margin-top:22px; padding:16px 18px; border-left:3px solid var(--accent); background:var(--bg-soft); }
     .proposal-note strong { display:block; margin-bottom:5px; }
     .proposal-note p { color:var(--muted); margin:0; }
+
+    /* Engineering proof and case study */
+    .evidence-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+    .evidence-card{padding:24px;border:1px solid var(--line);border-radius:10px;background:var(--bg-soft)}
+    .evidence-card strong{display:block;font-size:17px;line-height:1.4;margin-bottom:8px}
+    .evidence-card p,.case-study-content p{color:var(--muted);margin:0}
+    .architecture{margin-top:26px;border:1px solid var(--line);border-radius:10px;padding:24px;background:var(--bg-soft)}
+    .architecture-flow{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;align-items:stretch;margin:20px 0 12px}
+    .architecture-step{position:relative;background:var(--panel-solid);border:1px solid var(--line);border-radius:8px;padding:18px}
+    .architecture-step strong{display:block;font-size:14px;margin-bottom:8px}
+    .architecture-step span{font-size:12px;color:var(--muted)}
+    .architecture-note{font-size:13px;color:var(--muted);margin-top:12px}
+    .case-study-content{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:26px}
+    .case-study-content h3{font-size:20px;margin:0 0 12px}
+    .case-study-content ul{padding-left:20px;color:var(--muted);margin:0}
+    .case-study-content li+li{margin-top:8px}
+    @media(max-width:800px){.architecture-flow{grid-template-columns:repeat(2,minmax(0,1fr))}}
+    @media(max-width:620px){.evidence-grid,.case-study-content,.architecture-flow{grid-template-columns:1fr}.architecture{padding:18px}}
   </style>
 </head>
 <body>
@@ -119,6 +137,17 @@
       <div class="timeline"><div class="timeline-item"><div class="timeline-date">Jan 2024 – Jul 2025</div><div class="timeline-content"><h3>Technical Product Manager · MicroKosm</h3><p>Worked with stakeholders to prioritise ERP development and coordinate five graduate engineers contributing to ASP.NET Core and Angular migration work.</p></div></div><div class="timeline-item"><div class="timeline-date">Aug 2021 – Dec 2023</div><div class="timeline-content"><h3>Senior Software Engineer · MicroKosm</h3><p>Delivered and supported finance, procurement and inventory workflows; diagnosed complex .NET, Entity Framework and SQL Server defects and mentored junior engineers.</p></div></div><div class="timeline-item"><div class="timeline-date">Sep 2019 – Jul 2021</div><div class="timeline-content"><h3>Software Engineer · MicroKosm</h3><p>Built desktop ERP functionality in C#, WPF, Entity Framework and SQL Server, working across implementation, testing and production support.</p></div></div></div>
     </section>
 
+
+    <section id="achievements" class="one-page-section section shell">
+      <div class="section-heading"><div><span class="kicker">Engineering achievements</span><h2>Real challenges. Practical solutions.</h2></div><p>Selected implementation and production-support examples from my enterprise ERP work.</p></div>
+      <div class="evidence-grid">
+        <article class="evidence-card"><strong>100+ application windows</strong><p>Implemented a 15-minute inactivity sign-out across a large WPF application, improving consistency of session handling.</p></article>
+        <article class="evidence-card"><strong>5,000+ email items</strong><p>Integrated Outlook email workflows with ERP views, including message handling, attachments and folder navigation.</p></article>
+        <article class="evidence-card"><strong>Complex production troubleshooting</strong><p>Investigated Entity Framework tracking conflicts, SQL Server data issues, memory consumption and slow-running workflows.</p></article>
+        <article class="evidence-card"><strong>Cross-functional delivery</strong><p>Worked with finance and operations stakeholders and coordinated five graduate developers contributing to ERP web migration features.</p></article>
+      </div>
+    </section>
+
     <section id="work" class="one-page-section section shell">
       <div class="section-heading">
         <div><span class="kicker">Selected work</span><h2>Selected engineering projects.</h2></div>
@@ -142,7 +171,7 @@
             <div><h4>Selected impact</h4><ul><li>Delivered integrated accounting, procurement, sales and inventory workflows.</li><li>Resolved Entity Framework and SQL issues involving data integrity, memory and performance.</li><li>Implemented 15-minute idle sign-out across 100+ application windows.</li><li>Guided five graduates during ASP.NET Core and Angular migration work.</li></ul></div>
           </div>
           <p class="client-names"><strong>Examples of organisations supported:</strong> HaanaTech Ltd, ABT Europe Limited, Al Bijjar Trading, JAZ Trade International, ABT Logistics, ZAS Agencies and ZF Corporation.</p>
-          <div class="hero-actions"><a class="button button-primary" href="https://github.com/talhajavedawan/portfolio/blob/main/docs/CASE-STUDY.md" target="_blank" rel="noopener noreferrer">Read the engineering case study ↗</a></div>
+          <div class="hero-actions"><a class="button button-primary" href="#case-study">Read the engineering case study ↓</a></div>
         </article>
 
         <article class="project-card one-page-project">
@@ -150,6 +179,18 @@
           <h3>ERP Web Migration — APIs and role-based access</h3>
           <p>Helping modernise a desktop ERP into web services and a browser-based interface, with an emphasis on authentication, employee and organisational data, and controlled access to business workflows.</p>
           <div class="project-stack"><span>C#</span><span>ASP.NET Core Web API</span><span>Angular</span><span>EF Core</span><span>SQL Server</span><span>JWT / RBAC</span></div>
+
+          <div class="architecture" aria-label="Conceptual ERP web architecture">
+            <h4>ERP web architecture overview</h4>
+            <p>Conceptual view of the modernisation direction, not a claim that every layer is deployed in production.</p>
+            <div class="architecture-flow">
+              <div class="architecture-step"><strong>Angular</strong><span>User interface and role-aware navigation</span></div>
+              <div class="architecture-step"><strong>ASP.NET Core API</strong><span>REST endpoints, JWT authentication and authorisation</span></div>
+              <div class="architecture-step"><strong>Application &amp; EF Core</strong><span>Domain workflows and persistence mapping</span></div>
+              <div class="architecture-step"><strong>SQL Server</strong><span>Company, employee, user, role and permission data</span></div>
+            </div>
+            <p class="architecture-note">Data flow: Angular → REST API → application/data-access layer → SQL Server. RBAC enforcement belongs at the API and operation boundaries, not only in the interface.</p>
+          </div>
           <div class="project-details"><div><h4>Engineering focus</h4><ul><li>REST API structure and SQL Server data access.</li><li>Company, department, employee, user, role and permission models.</li><li>Authentication and role-based access design.</li></ul></div><div><h4>Delivery contribution</h4><p>Coordinated five graduate developers and reviewed work across login, user management, accounting and inventory features. This is an ongoing modernisation effort, not a claimed production deployment.</p></div></div>
         </article>
         <div class="project-grid">
@@ -169,6 +210,21 @@
           </article>
         </div>
       </div>
+    </section>
+
+
+    <section id="case-study" class="one-page-section section shell">
+      <div class="section-heading"><div><span class="kicker">Engineering case study</span><h2>Inside SmartERP: designing for complex business workflows.</h2></div><p>Commercial application development and support, distinct from the later MSc research proposal.</p></div>
+      <article class="project-card one-page-project">
+        <div class="project-meta"><span>Enterprise desktop ERP</span><span>C# · WPF · EF6 · SQL Server</span></div>
+        <div class="case-study-content">
+          <div><h3>Business context</h3><p>Multiple businesses needed configurable processes for procurement, sales, inventory and finance. A shared ERP connected transactions while accommodating differences in operational workflows and approval routes.</p></div>
+          <div><h3>My contribution</h3><p>Implemented and maintained WPF features, investigated production incidents, worked with business stakeholders, and supported software releases and users. Responsibilities grew from engineering into senior development and technical product coordination.</p></div>
+          <div><h3>Technical challenges</h3><ul><li>Entity Framework state tracking and context conflicts across complex data workflows.</li><li>Memory use and responsiveness in a large, long-running desktop application.</li><li>Consistent session timeout across more than 100 windows.</li><li>Integrating email and transactional business data in daily operations.</li></ul></div>
+          <div><h3>Approach and outcomes</h3><ul><li>Traced issues through application behaviour, entity state and SQL queries before implementing fixes.</li><li>Delivered connected finance and operations modules supporting 200–250 users across nine businesses.</li><li>Improved consistent access behaviour through centrally applied inactivity sign-out.</li><li>Helped plan staged REST API and Angular modernisation, without claiming a completed production migration.</li></ul></div>
+        </div>
+        <div class="hero-actions"><a class="button button-secondary" href="https://github.com/talhajavedawan/portfolio/blob/main/docs/CASE-STUDY.md" target="_blank" rel="noopener noreferrer">Read extended technical notes ↗</a></div>
+      </article>
     </section>
 
     <section id="research" class="one-page-section section shell">
