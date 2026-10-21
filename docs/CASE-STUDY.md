@@ -56,3 +56,20 @@ The value of this experience lies beyond a single algorithm. It is the accumulat
 - Ability to balance legacy constraints with modern engineering direction.
 - Communication with both technical and non-technical stakeholders.
 - Team leadership and mentoring alongside individual delivery.
+
+## Engineering evidence and source-code boundaries
+
+The commercial desktop ERP code is proprietary and is not published in this portfolio. These are separate illustrative C# examples in the public portfolio repository, alongside automated tests:
+
+- [Cash flow calculation example](https://github.com/talhajavedawan/portfolio/blob/main/src/SmartERP.Showcase/CashFlowSummaryService.cs) and [unit tests](https://github.com/talhajavedawan/portfolio/blob/main/tests/SmartERP.Showcase.Tests/CashFlowSummaryServiceTests.cs).
+- [Approval workflow example](https://github.com/talhajavedawan/portfolio/blob/main/src/SmartERP.Showcase/ApprovalWorkflow.cs) and [unit tests](https://github.com/talhajavedawan/portfolio/blob/main/tests/SmartERP.Showcase.Tests/ApprovalWorkflowTests.cs).
+
+These examples demonstrate testing and domain-modelling techniques; they should not be interpreted as copies of the deployed ERP's source code.
+
+## Production troubleshooting: method and boundaries
+
+In a mature WPF/EF6 application, incidents involving entity tracking and database state required inspecting the affected UI workflow, Entity Framework context lifetime, object identity and SQL queries. I investigated those layers, applied targeted fixes and checked affected transactions after changes. The public description intentionally excludes proprietary implementation details, confidential records and unverified performance claims. The portfolio also documents a centrally implemented inactivity sign-out across more than 100 application windows and Outlook integration handling approximately 5,000 email items.
+
+## Screenshot evidence
+
+The [SmartERP dashboard screenshot](https://talhajavedawan.github.io/portfolio/images/MainDashboard.PNG) is the only image currently referenced in the public homepage. Further screenshots should be published only after redacting sensitive information and confirming permission to disclose them.
