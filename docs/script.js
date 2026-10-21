@@ -1,4 +1,17 @@
 (() => {
+  // Keep portfolio URLs clean when opened through referral links.
+  const currentUrl = new URL(window.location.href);
+  let hasTrackingParameters = false;
+  for (const key of [...currentUrl.searchParams.keys()]) {
+    if (/^utm_/i.test(key)) {
+      currentUrl.searchParams.delete(key);
+      hasTrackingParameters = true;
+    }
+  }
+  if (hasTrackingParameters) {
+    window.history.replaceState(window.history.state, '', currentUrl.pathname + currentUrl.search + currentUrl.hash);
+  }
+
   const menuToggle = document.querySelector('.menu-toggle');
   const navLinks = document.querySelector('.nav-links');
 
@@ -39,7 +52,7 @@
     item.addEventListener('click', () => {
       if (!dialog || !dialogImage || !dialogCaption) return;
       dialogImage.src = item.dataset.image || '';
-      dialogImage.alt = item.dataset.title || 'SmartERP screenshot';
+      dialogImage.alt = item.dataset.title || 'Customized ERP screenshot';
       dialogCaption.textContent = item.dataset.title || '';
       dialog.showModal();
     });
