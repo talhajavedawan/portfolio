@@ -467,5 +467,3 @@ html[data-theme="dark"]{--accent:#b89bff;--accent-2:#9474eb;--accent-3:#d7c8ff;-
 @media(max-width:900px){.module-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:580px){.module-grid{grid-template-columns:1fr}.module-card{min-height:125px}}
 
-
-.experience-section .section-heading{grid-template-columns:1fr;margin-bottom:26px}
