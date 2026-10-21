@@ -72,4 +72,4 @@ In a mature WPF/EF6 application, incidents involving entity tracking and databas
 
 ## Screenshot evidence
 
-The [SmartERP dashboard screenshot](https://talhajavedawan.github.io/portfolio/images/MainDashboard.PNG) is the only image currently referenced in the public homepage. Further screenshots should be published only after redacting sensitive information and confirming permission to disclose them.
+The [Customized ERP dashboard screenshot](https://talhajavedawan.github.io/portfolio/images/MainDashboard.PNG) is the only image currently referenced in the public homepage. Further screenshots should be published only after redacting sensitive information and confirming permission to disclose them.
