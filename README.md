@@ -4,7 +4,7 @@
 
 [Live portfolio](https://talhajavedawan.github.io/portfolio/) · [CV](https://talhajavedawan.github.io/portfolio/cv/Talha_Javed_CV.pdf) · [LinkedIn](https://www.linkedin.com/in/talha-javed-013319173/)
 
-## SmartERP
+## Customized ERP
 
 From 2019 to 2025, I developed and supported a multi-company finance and operations ERP used by approximately 200–250 people across nine businesses. I progressed from Software Engineer to Senior Software Engineer and Technical Product Manager.
 
