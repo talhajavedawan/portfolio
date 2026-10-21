@@ -733,3 +733,11 @@ a:focus-visible,button:focus-visible{outline:3px solid #377f6c;outline-offset:4p
   .erp-visual .erp-module-cloud .erp-module{font-size:11px;padding:9px 5px}
   .erp-visual .erp-visual-footer{font-size:10px}
 }
+
+/* Single responsive SVG image replaces collision-prone module labels. */
+.erp-image-frame{position:relative;isolation:isolate;min-width:0;width:100%;padding:9px;border-radius:26px;overflow:hidden;background:#edf5ef;border:1px solid #d2e3d9;box-shadow:0 20px 60px rgba(24,82,59,.08)}
+.erp-image-frame .erp-radial-glow{position:absolute;inset:-25%;z-index:-1;pointer-events:none}
+.erp-modules-image{position:relative;display:block;width:100%;height:auto;max-width:100%;border-radius:18px;object-fit:contain}
+@media(max-width:800px){.erp-image-frame{max-width:610px;margin-inline:auto}}
+@media(max-width:520px){.erp-image-frame{padding:5px;border-radius:17px}.erp-modules-image{border-radius:12px}}
+@media(prefers-reduced-motion:reduce){.erp-image-frame .erp-radial-glow{animation:none}}
